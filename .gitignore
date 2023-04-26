@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# Ignores so i dont have to keep reinstalling these shiet
+package.json
+package-lock.json
