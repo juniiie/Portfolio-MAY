@@ -16,7 +16,7 @@ function App() {
     <>
       <GlobalStyle />
 
-      <ThemeProvider theme={darkTheme}>
+      <ThemeProvider theme={lightTheme}>
         <Routes>
           <Route exact path="/" element={<Main />} />
           <Route exact path="/about" element={<AboutPage />} />
