@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import { PowerButton } from "../subComponents/PowerButton";
@@ -92,8 +92,8 @@ const rotate = keyframes`
 // YIN YANG
 const Center = styled.button`
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: ${(props) => (props.click ? "85%" : "50%")};
+  left: ${(props) => (props.click ? "92%" : "50%")};
   transform: translate(-50%, -50%);
   border: none;
   outline: none;
@@ -115,6 +115,9 @@ const Center = styled.button`
 `;
 
 export const Main = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
   return (
     <MainContainer>
       <Container>
@@ -122,8 +125,13 @@ export const Main = () => {
         <LogoComponent />
         <SocialIcons />
 
-        <Center>
-          <YinYang width={150} height={150} fill="currentColor" />
+        <Center click={click}>
+          <YinYang
+            onClick={() => handleClick()}
+            width={150}
+            height={150}
+            fill="currentColor"
+          />
           <span>click here</span>
         </Center>
 
