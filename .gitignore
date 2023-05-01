@@ -25,5 +25,5 @@ dist-ssr
 
 
 # Ignores so i dont have to keep reinstalling these shiet
-package.json
-package-lock.json
+# package.json
+# package-lock.json
