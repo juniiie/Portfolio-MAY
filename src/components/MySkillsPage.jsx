@@ -2,11 +2,12 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./Themes";
 import styled from "styled-components";
-import { Design, Develope, PowerBtn } from "./AllSvgs";
+import { Design, Develope } from "./AllSvgs";
 
 import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import { PowerButton } from "../subComponents/PowerButton";
+import { ParticleComponent } from "../subComponents/ParticleComponent";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -78,9 +79,10 @@ export const MySkillsPage = () => {
   return (
     <ThemeProvider theme={lightTheme}>
       <Box>
-        <LogoComponent theme="light" />
-        <SocialIcons theme="light" />
+        <LogoComponent theme="lightTheme" />
+        <SocialIcons theme="lightTheme" />
         <PowerButton />
+        <ParticleComponent theme={lightTheme} />
         <Main>
           <Title>
             <Design width={40} height={40} />
