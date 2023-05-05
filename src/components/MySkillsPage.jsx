@@ -8,6 +8,7 @@ import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import { PowerButton } from "../subComponents/PowerButton";
 import { ParticleComponent } from "../subComponents/ParticleComponent";
+import BigTitle from "../subComponents/BigTitle";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -82,7 +83,7 @@ export const MySkillsPage = () => {
         <LogoComponent theme="lightTheme" />
         <SocialIcons theme="lightTheme" />
         <PowerButton />
-        <ParticleComponent theme={lightTheme} />
+        <ParticleComponent theme="light" />
         <Main>
           <Title>
             <Design width={40} height={40} />
@@ -126,6 +127,12 @@ export const MySkillsPage = () => {
             <p>VScode, Github</p>
           </Description>
         </Main>
+        <BigTitle
+          text="SKILLS"
+          top="80%"
+          right="30%"
+          color="rbga(0, 0, 0, 0.1)"
+        />
       </Box>
     </ThemeProvider>
   );

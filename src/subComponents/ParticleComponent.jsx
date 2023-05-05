@@ -26,7 +26,8 @@ export const ParticleComponent = (props) => {
       <Particles
         id="tsparticles"
         style={{ position: "absolute", top: 0 }}
-        params={props.theme === "lightTheme" ? ConfigDark : ConfigLight}
+        // No fkn clue what lightTheme is coming from???
+        params={props.theme === "light" ? ConfigLight : ConfigDark}
         init={particlesInit}
       />
       {console.log(props.theme)}

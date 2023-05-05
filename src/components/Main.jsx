@@ -39,22 +39,13 @@ const Contact = styled(NavLink)`
   z-index: 1;
 `;
 
-const BLOG = styled(NavLink)`
-  color: ${(props) => props.theme.text};
-  position: absolute;
-  top: 50%;
-  transform: rotate(90deg) translate(-50%, -50%);
-  right: calc(1rem + 2vw);
-  text-decoration: none;
-  z-index: 1;
-`;
-
 const WORK = styled(NavLink)`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
   left: calc(1.3rem + 2vw);
+  /* left: calc(1rem + 2vw); */
   text-decoration: none;
   z-index: 1;
 `;
@@ -94,7 +85,7 @@ const rotate = keyframes`
 // YIN YANG
 const Center = styled.button`
   position: absolute;
-  top: ${(props) => (props.click ? "85%" : "50%")};
+  top: ${(props) => (props.click ? "50%" : "50%")};
   left: ${(props) => (props.click ? "92%" : "50%")};
   transform: translate(-50%, -50%);
   border: none;
@@ -154,21 +145,36 @@ export const Main = () => {
 
         {/* MAKE THE EMAIL FUNCTION WORK */}
         <Contact target="_blank" href="mailto:codebucks27@gmail.com">
-          <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <motion.h2
+            initial={{
+              y: -200,
+              transition: { type: "spring", duration: 1.5, delay: 1 },
+            }}
+            animate={{
+              y: 0,
+              transition: { type: "spring", duration: 1.5, delay: 1 },
+            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             Say hi...
           </motion.h2>
         </Contact>
 
-        {/* BLOG */}
-        <BLOG to="/blog">
-          <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            Blog.
-          </motion.h2>
-        </BLOG>
-
         {/* WORK */}
         <WORK to="/work" click={click}>
-          <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <motion.h2
+            initial={{
+              y: -200,
+              transition: { type: "spring", duration: 1.5, delay: 1 },
+            }}
+            animate={{
+              y: 0,
+              transition: { type: "spring", duration: 1.5, delay: 1 },
+            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             Work.
           </motion.h2>
         </WORK>
@@ -176,12 +182,34 @@ export const Main = () => {
         {/* BOTTOM BAR */}
         <BottomBar>
           <ABOUT to="/about" click={click}>
-            <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <motion.h2
+              initial={{
+                y: 200,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              animate={{
+                y: 0,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               About.
             </motion.h2>
           </ABOUT>
           <SKILLS to="/skills">
-            <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <motion.h2
+              initial={{
+                y: 200,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              animate={{
+                y: 0,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               My Skills.
             </motion.h2>
           </SKILLS>

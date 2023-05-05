@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router";
 import { lightTheme, darkTheme } from "./components/Themes";
 import "./App.css";
 import { GlobalStyle } from "./globalStyles";
+import { AnimatePresence } from "framer-motion";
 
 // COMPONENTS
 import { Main } from "./components/Main";
@@ -17,13 +18,16 @@ function App() {
       <GlobalStyle />
 
       <ThemeProvider theme={lightTheme}>
-        <Routes>
-          <Route exact path="/" element={<Main />} />
-          <Route exact path="/about" element={<AboutPage />} />
-          <Route exact path="/blog" element={<BlogPage />} />
-          <Route exact path="/work" element={<WorkPage />} />
-          <Route exact path="/skills" element={<MySkillsPage />} />
-        </Routes>
+        <AnimatePresence mode="wait">
+          <Routes>
+            <Route exact path="/" element={<Main />} />
+            <Route exact path="/about" element={<AboutPage />} />
+            <Route exact path="/blog" element={<BlogPage />} />
+            <Route exact path="/work" element={<WorkPage />} />
+            <Route exact path="/skills" element={<MySkillsPage />} />
+            <Route path="*" element={<Main />} />
+          </Routes>
+        </AnimatePresence>
       </ThemeProvider>
     </>
   );
