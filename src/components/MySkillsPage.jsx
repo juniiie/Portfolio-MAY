@@ -16,6 +16,7 @@ const Box = styled.div`
   height: 100vh;
   position: relative;
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-evenly;
   align-items: center;
 `;
@@ -61,6 +62,7 @@ const Description = styled.div`
   color: ${(props) => props.theme.text};
   font-size: calc(0.6rem + 1vw);
   padding: 0.5rem 0;
+  overflow: hidden;
 
   ${Main}:hover & {
     color: ${(props) => props.theme.body};
@@ -84,29 +86,8 @@ export const MySkillsPage = () => {
         <SocialIcons theme="lightTheme" />
         <PowerButton />
         <ParticleComponent theme="light" />
-        <Main>
-          <Title>
-            <Design width={40} height={40} />
-            Designer
-          </Title>
-          <Description>
-            I love to create design which speaks, Keep it clean, minimal and
-            simple.
-          </Description>
-          <Description>
-            <strong>I like to design</strong>
-            <ul>
-              <li>Web Design</li>
-              <li>Mobile Apps</li>
-            </ul>
-          </Description>
-          <Description>
-            <strong>Tools</strong>
-            <ul>
-              <li>Figma</li>
-            </ul>
-          </Description>
-        </Main>
+
+        {/* FRONT END CARD */}
         <Main>
           <Title>
             <Develope width={40} height={40} />
@@ -127,11 +108,36 @@ export const MySkillsPage = () => {
             <p>VScode, Github</p>
           </Description>
         </Main>
+
+        {/* BACKEND CARD */}
+        <Main>
+          <Title>
+            <Design width={40} height={40} />
+            Back End
+          </Title>
+          <Description>
+            I love to create design which speaks, Keep it clean, minimal and
+            simple.
+          </Description>
+          <Description>
+            <strong>I like to design</strong>
+            <ul>
+              <li>Web Design</li>
+              <li>Mobile Apps</li>
+            </ul>
+          </Description>
+          <Description>
+            <strong>Tools</strong>
+            <ul>
+              <li>Figma</li>
+            </ul>
+          </Description>
+        </Main>
         <BigTitle
           text="SKILLS"
           top="80%"
           right="30%"
-          color="rbga(0, 0, 0, 0.1)"
+          color="rgba(0, 0, 0, 0.2)"
         />
       </Box>
     </ThemeProvider>

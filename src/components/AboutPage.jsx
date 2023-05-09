@@ -23,7 +23,7 @@ const float = keyframes`
 
 `;
 const Spaceman = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
   top: 10%;
   right: 5%;
@@ -68,14 +68,17 @@ export const AboutPage = () => {
           <img src={astronaut} alt="spaceman" />
         </Spaceman>
         <Main>
-          I'm a front-end developer located in India. I love to create simple
-          yet beautiful websites with great user experience.
+          G'day! I'm a web developer based in the beautiful city of Melbourne,
+          Australia. I have a passion for crafting websites that not only look
+          stunning but also provide an awesome user experience. While I enjoy
+          working with the full stack, my heart belongs to front-end
+          development.
           <br /> <br />
-          I'm interested in the whole frontend stack Like trying new things and
-          building great projects. I'm an independent freelancer and blogger. I
-          love to write blogs and read books.
-          <br /> <br />I believe everything is an Art when you put your
-          consciousness in it. You can connect with me via social links.
+          For me, web development is an art form, and every project is a canvas
+          waiting to be painted. I love pouring my heart and soul into my work,
+          creating websites that not only function flawlessly but also leave a
+          lasting impression on anyone who visits them. Want to connect? Hit me
+          up on my socials!
         </Main>
 
         <BigTitle text="ABOUT" top="10%" left="5%" />

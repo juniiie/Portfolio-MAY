@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import Me from "../assets/images/profile-img.png";
+import Me from "../assets/images/me.png";
 
 const Box = styled(motion.div)`
   position: absolute;
@@ -59,6 +59,7 @@ const Text = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  /* justify-content: space-between; */
 
   & > *:last-child {
     color: ${(props) => `rgba(${props.theme.bodyRgba}, 0.6)`};
@@ -76,9 +77,15 @@ export const Intro = () => {
     >
       <SubBox>
         <Text>
-          <h1>Hi,</h1>
-          <h3>I'm Climson Buking Jr</h3>
-          <h6>I design and code simple yet beutiful websites</h6>
+          <h3>
+            Hi, <br></br> I'm Climson Buking Jr
+          </h3>
+          {/* <h3>I'm Climson Buking Jr</h3> */}
+          <h6>
+            I'm a software developer, which means I spend all day staring at a
+            screen and occasionally muttering to myself. But hey, at least I
+            don't have to wear pants to work.
+          </h6>
         </Text>
       </SubBox>
       <SubBox>
