@@ -19,6 +19,11 @@ const Box = styled.div`
   /* flex-direction: column; */
   justify-content: space-evenly;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 100%;
+  }
 `;
 const Main = styled.div`
   border: 2px solid ${(props) => props.theme.text};
@@ -39,6 +44,11 @@ const Main = styled.div`
   &:hover {
     color: ${(props) => props.theme.body};
     background-color: ${(props) => props.theme.text};
+  }
+
+  @media (max-width: 768px) {
+    width: 40vw;
+    margin-top: 20%;
   }
 `;
 
@@ -61,6 +71,7 @@ const Title = styled.h2`
 const Description = styled.div`
   color: ${(props) => props.theme.text};
   font-size: calc(0.6rem + 1vw);
+  /* font-size: 20px; */
   padding: 0.5rem 0;
   overflow: hidden;
 
@@ -87,57 +98,81 @@ export const MySkillsPage = () => {
         <PowerButton />
         <ParticleComponent theme="light" />
 
-        {/* FRONT END CARD */}
+        {/* FS CARD */}
         <Main>
           <Title>
             <Develope width={40} height={40} />
-            Front End
+            Full Stack
           </Title>
           <Description>
-            I value business or brand for which i'm creating, thus i enjoy
-            bringing new ideas to life.
+            {/* My design philosophy revolves around simplicity, minimalism, and
+            cleanliness to ensure that the websites message is delivered
+            effectively and clearly. */}
+            I have the expertise to design and develop all aspects of web
+            applications. With a focus on simplicity, minimalism, and
+            cleanliness to ensure that the website is delivered effectively and
+            clearly.
+          </Description>
+
+          <Description>
+            <strong>Front-End</strong>
+            <ul>
+              <li>HTML</li>
+              <li>CSS, Tailwind, styled-components</li>
+              <li>Javascript, React.js</li>
+              <li>Redux Tool-kit</li>
+            </ul>
           </Description>
           <Description>
-            <strong>SKills</strong>
-            <p>
-              Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase
-            </p>
-          </Description>
-          <Description>
-            <strong>Tools</strong>
-            <p>VScode, Github</p>
+            <strong>Back-end</strong>
+            <ul>
+              <li>Node.js</li>
+              <li>Firebase</li>
+              <li>MySQL</li>
+              <li>Strapi CMS</li>
+            </ul>
           </Description>
         </Main>
 
-        {/* BACKEND CARD */}
+        {/* TOOLS CARD */}
         <Main>
           <Title>
             {/* <Design width={40} height={40} /> */}
             <Cog width={40} height={40} />
-            Back End
+            TOOLS
           </Title>
           <Description>
-            I love to create design which speaks, Keep it clean, minimal and
-            simple.
+            I utilize a range of applications to streamline and enhance my web
+            development process. These help me deliver high-quality and
+            efficient web solutions that meet the needs and expectations of my
+            clients and users
           </Description>
           <Description>
-            <strong>I like to design</strong>
+            <strong>Project Management</strong>
             <ul>
-              <li>Web Design</li>
-              <li>Mobile Apps</li>
+              <li>Visual Studio Code</li>
+              <li>GitHub, Git</li>
+              <li>One drive</li>
+              <li>Trello, Slack, Teams</li>
+              <li>Photoshop, InDesign</li>
             </ul>
           </Description>
           <Description>
-            <strong>Tools</strong>
+            <strong>Agile Methodologies</strong>
             <ul>
-              <li>Figma</li>
+              <li>Scrum</li>
+              <li>Kanban</li>
             </ul>
           </Description>
         </Main>
+
+        {/* <Main>
+          <Description>Fuck</Description>
+        </Main> */}
         <BigTitle
           text="SKILLS"
-          top="80%"
-          right="30%"
+          top="85%"
+          right="10%"
           color="rgba(0, 0, 0, 0.2)"
         />
       </Box>
