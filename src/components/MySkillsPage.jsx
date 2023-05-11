@@ -2,7 +2,7 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./Themes";
 import styled from "styled-components";
-import { Design, Develope } from "./AllSvgs";
+import { Design, Develope, Cog } from "./AllSvgs";
 
 import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
@@ -112,7 +112,8 @@ export const MySkillsPage = () => {
         {/* BACKEND CARD */}
         <Main>
           <Title>
-            <Design width={40} height={40} />
+            {/* <Design width={40} height={40} /> */}
+            <Cog width={40} height={40} />
             Back End
           </Title>
           <Description>
