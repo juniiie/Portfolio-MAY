@@ -70,7 +70,7 @@ const Title = styled.h2`
 
 const Description = styled.div`
   color: ${(props) => props.theme.text};
-  font-size: calc(0.6rem + 1vw);
+  font-size: calc(0.2rem + 1vw);
   /* font-size: 20px; */
   padding: 0.5rem 0;
   overflow: hidden;
@@ -86,6 +86,10 @@ const Description = styled.div`
   ul,
   p {
     margin-left: 2rem;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: calc(0.4rem + 1vw);
   }
 `;
 
