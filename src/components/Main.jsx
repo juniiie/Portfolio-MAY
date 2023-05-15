@@ -140,7 +140,7 @@ export const Main = () => {
             height={click ? 120 : 200}
             fill="currentColor"
           />
-          <span>click here</span>
+          <span>click me &uarr;</span>
         </Center>
 
         {/* MAKE THE EMAIL FUNCTION WORK */}
