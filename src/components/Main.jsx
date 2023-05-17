@@ -24,6 +24,10 @@ const MainContainer = styled.div`
     font-family: "Karla", sans-serif;
     font-weight: 500;
   }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 `;
 
 const Container = styled.div`
@@ -157,7 +161,7 @@ export const Main = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Say hi...
+            <a href="mailto:climsonjr@gmail.com">Say hi...</a>
           </motion.h2>
         </Contact>
 
