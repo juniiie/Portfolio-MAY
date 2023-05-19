@@ -88,8 +88,15 @@ const Description = styled.div`
     margin-left: 2rem;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1100px) {
     font-size: calc(0.4rem + 1vw);
+  }
+
+  /* @media (max-width: 768px) {
+    font-size: calc(0.2rem + 1vw);
+  } */
+  @media (max-height: 768px) {
+    font-size: calc(0.2rem + 1vw);
   }
 `;
 
