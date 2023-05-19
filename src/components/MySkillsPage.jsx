@@ -92,9 +92,9 @@ const Description = styled.div`
     font-size: calc(0.4rem + 1vw);
   }
 
-  /* @media (max-width: 768px) {
-    font-size: calc(0.2rem + 1vw);
-  } */
+  @media (max-width: 768px) {
+    font-size: calc(0.6rem + 1vw);
+  }
   @media (max-height: 768px) {
     font-size: calc(0.2rem + 1vw);
   }
