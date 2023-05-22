@@ -93,7 +93,7 @@ const Description = styled.div`
   }
 
   @media (max-width: 768px) {
-    font-size: calc(0.6rem + 1vw);
+    font-size: calc(0.8rem + 1vw);
   }
   @media (max-height: 768px) {
     font-size: calc(0.2rem + 1vw);
@@ -165,7 +165,6 @@ export const MySkillsPage = () => {
               <li>GitHub, Git</li>
               <li>One drive</li>
               <li>Trello, Slack, Teams</li>
-              <li>Photoshop, InDesign</li>
             </ul>
           </Description>
           <Description>
