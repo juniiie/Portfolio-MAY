@@ -26,8 +26,8 @@ export const Work = [
       "A sushi landing page that is designed to capture the viewers attention",
     tags: ["HTML", "CSS", "Javascript", "AOS animation"],
 
-    demo: "https://image-gallery-ten-ecru.vercel.app/",
-    github: "https://github.com/juniiie/ImageGallery",
+    demo: "https://sushiety.vercel.app/",
+    github: "https://github.com/juniiie/Sushiety",
   },
   {
     id: 4,
