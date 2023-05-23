@@ -33,7 +33,7 @@ export const Work = [
     id: 4,
     name: "Landing Page - Gym Society",
     description:
-      "A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.",
+      "A fitness landing page that is designed to demonstrate front end design skills",
     tags: ["React", "Styled-components"],
 
     demo: "https://gym-society.vercel.app/",
