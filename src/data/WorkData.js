@@ -48,4 +48,14 @@ export const Work = [
     demo: "https://unrivaled-gnome-0c0767.netlify.app/",
     github: "https://github.com/juniiie/jun---shoeweb",
   },
+  {
+    id: 6,
+    name: "Munchkins",
+    description:
+      "[[IN PROGRESS]] An NFT collection landing page with responsive design while featuring complex animations",
+    tags: ["HTML", "Styled-components", "React.js", "GSAP"],
+
+    demo: "#",
+    github: "#",
+  },
 ];
