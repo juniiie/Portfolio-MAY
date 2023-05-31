@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styled, { ThemeProvider } from "styled-components";
-import { darkTheme } from "./Themes";
+import { darkTheme, lightTheme } from "./Themes";
 import { motion } from "framer-motion";
 
 import LogoComponent from "../subComponents/LogoComponent";
@@ -14,7 +14,6 @@ import BigTitle from "../subComponents/BigTitle";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
-
   height: 400vh;
   position: relative;
   display: flex;
@@ -76,8 +75,8 @@ export const WorkPage = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <Box>
-        <LogoComponent theme="dark" />
-        <SocialIcons theme="dark" />
+        <LogoComponent theme="darkTheme" />
+        <SocialIcons theme="darkTheme" />
         <PowerButton />
 
         <Main ref={ref} variants={container} initial="hidden" animate="show">

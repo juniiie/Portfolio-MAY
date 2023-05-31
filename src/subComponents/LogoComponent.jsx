@@ -5,7 +5,7 @@ import { darkTheme } from "../components/Themes";
 const Logo = styled.h1`
   display: inline-block;
   color: ${(props) =>
-    props.color === "dark" ? darkTheme.text : darkTheme.body};
+    props.color === "darkTheme" ? darkTheme.text : darkTheme.body};
   font-family: "Pacifico", cursive;
 
   position: fixed;

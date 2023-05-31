@@ -59,10 +59,10 @@ export const AboutPage = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <Box>
-        <LogoComponent theme="dark" />
-        <SocialIcons theme="dark" />
+        <LogoComponent theme="darkTheme" />
+        <SocialIcons theme="darkTheme" />
         <PowerButton />
-        <ParticleComponent theme="dark" />
+        <ParticleComponent theme="darkTheme" />
 
         <Spaceman>
           <img src={astronaut} alt="spaceman" />

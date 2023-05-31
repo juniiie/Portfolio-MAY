@@ -7,9 +7,11 @@ import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import { YinYang } from "./AllSvgs";
 import { Intro } from "./Intro";
+import { lightTheme, darkTheme } from "./Themes";
 
 const MainContainer = styled.div`
   background: ${(props) => props.theme.body};
+
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -25,7 +27,8 @@ const MainContainer = styled.div`
     font-weight: 500;
   }
   a {
-    color: inherit;
+    /* color: inherit; */
+
     text-decoration: none;
   }
 `;
@@ -35,16 +38,21 @@ const Container = styled.div`
 `;
 
 const Contact = styled(NavLink)`
-  color: ${(props) => props.theme.text};
+  color: inherit;
   position: absolute;
   top: 2rem;
   right: calc(1rem + 2vw);
   text-decoration: none;
   z-index: 1;
+
+  a {
+    color: ${(props) => props.theme.text};
+  }
 `;
 
 const WORK = styled(NavLink)`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+  background: none;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
@@ -67,6 +75,8 @@ const BottomBar = styled.div`
 
 const ABOUT = styled(NavLink)`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+  /* color: red; */
+  /* background: none; */
   text-decoration: none;
   z-index: 1;
 `;
@@ -134,8 +144,8 @@ export const Main = () => {
       <DarkDiv click={click} />
       <Container>
         <PowerButton />
-        <LogoComponent theme={click ? "dark" : "light"} />
-        <SocialIcons theme={click ? "dark" : "light"} />
+        <LogoComponent theme={click ? "darkTheme" : "lightTheme"} />
+        <SocialIcons theme={click ? "darkTheme" : "lightTheme"} />
 
         <Center click={click}>
           <YinYang
