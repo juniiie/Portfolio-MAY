@@ -33,7 +33,7 @@ export const Work = [
     id: 4,
     name: "Munchkins",
     description:
-      "[[IN PROGRESS]] An NFT collection landing page with responsive design while featuring complex animations",
+      "An NFT collection landing page with responsive design while featuring complex animations",
     tags: ["HTML", "Styled-components", "React.js", "GSAP"],
 
     demo: "https://munchkins.vercel.app/",
